@@ -1,0 +1,133 @@
+body, html {
+	font-family: Verdana, Arial, Georgia;
+	color: black;
+	height: 100%;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.bg-image{
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img3{background-image: url("imagini/3.jpeg");}
+.img4{background-image: url("imagini/4.jpeg");}
+.img6{background-image: url("imagini/6.jpeg");}
+
+.bg-text{
+	overflow:hidden;
+	float:right;
+	font-size:16px;
+	text-decoration: none;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 340px;
+  right: 420px;
+  left: 420px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+	font-family: Verdana, Arial, Georgia;
+	background-color:black;
+	color: black;
+	
+}
+
+.meniuOrizontal {
+		list-style-type:none;
+		margin-top:-15px;
+		padding:5px;
+		color:#ccc;
+}
+
+.meniuOrizontal li{
+		display:inline-block;
+		float:right;
+		border-right: 1px solid #fff;
+		padding:10px;
+		cursor:pointer;
+		color:#ccc;
+}
+
+#continut {
+	width:100%;
+	background-color:#fff;
+	min-height:400px;
+	float:left;
+	text-align:justify;
+	list-style-type:none;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.text-block2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+  position: absolute;
+  bottom: -360px;
+  right: 420px;
+  left: 420px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block3 {
+  position: absolute;
+  bottom: 450px;
+  right: 420px;
+  left: 420px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#subsol {
+		height:40px;
+		background-color: black;
+		color: white;
+		text-align:center;
+		clear:both;
+		width:100%;
+		float:left;
+		margin-left: 0px;
+}

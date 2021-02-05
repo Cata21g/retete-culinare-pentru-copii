@@ -1,0 +1,90 @@
+body, html {
+	font-family: Verdana, Arial, Georgia;
+	color: black;
+	height: 100%;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.bg-image{
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img3{background-image: url("imagini/3.jpeg");}
+.img4{background-image: url("imagini/4.jpeg");}
+.img6{background-image: url("imagini/6.jpeg");}
+
+.text-block {
+  position: absolute;
+  bottom: 220px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+	font-family: Verdana, Arial, Georgia;
+	background-color:black;
+	color: black;
+}
+
+#container{
+	width:960px;
+	margin: 0 auto;
+}
+
+.meniuOrizontal {
+		list-style-type:none;
+		margin-top:-15px;
+		padding:5px;
+		color:#ccc;
+}
+
+.meniuOrizontal li{
+		display:inline-block;
+		float:right;
+		border-right: 1px solid #fff;
+		padding:10px;
+		cursor:pointer;
+		color:#ccc;
+}
+
+#continut {
+	width:100%;
+	background-color:#fff;
+	min-height:400px;
+	float:left;
+	text-align:justify;
+	list-style-type:none;
+}
+
+.text-block3 {
+  position: absolute;
+  bottom: 450px;
+  right: 420px;
+  left: 420px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#subsol {
+		height:40px;
+		background-color: black;
+		color: white;
+		text-align:center;
+		clear:both;
+		width:100%;
+		float:left;
+		margin-left: 0px;
+}

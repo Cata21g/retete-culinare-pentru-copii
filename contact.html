@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact</title>
+<link href="contact.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<ul class="meniuOrizontal">
+		
+		<style>
+		a:link {
+			color: white;
+			text-decoration: none;
+			}
+		a:visited {
+			color: white;
+			text-decoration: none;
+			}
+		</style>
+			
+		<li><p><a href="contact.html">Contact</a></p></li>
+		<li><p><a href="tabel.html">Tabel diversificare</a></p></li>
+		<li><p><a href="6luni.html">Mesele bebelușului</a></p></li>
+		<li><p><a href="retete.html">Rețete</a></p></li>
+		<li><p><a href="despre.html">Despre</a></p></li>
+		<li><p><a href="proiect.html">Home</a></p></li>
+	</ul>
+		
+	<div id="continut">
+	
+		<div class="bg-image img4"></div>
+		<div class="bg-image img6"></div>
+		<div class="bg-image img3"></div>
+		
+		<div class="text-block3">
+		
+			<h2>Contactează-ne!</h2>
+			
+		</div>
+
+		<div class="text-block">
+			<p>email: contact@picky.ro</p>
+			<p>telefon: 0747.222.003</p>
+		</div>
+
+		<div class="text-block2">
+		
+			<?php
+			$numeErr = $prenumeErr = $emailErr = "";
+			$nume = $prenume = $email = $subiect = "";
+			
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				if (empty($_POST["nume"])) {
+					$numeErr = "Numele este obligatoriu";
+					} else {
+					$nume = test_input($_POST["nume"]);
+					if (!preg_match("/^[a-zA-Z-' ]*$/",$nume)) {
+					$numeErr = "Numele poate contine doar caractere";
+					}
+					if (!preg_match("/^[a-zA-Z-' ]*$/",$prenume)) {
+					$prenumeErr = "Prenumele poate contine doar caractere";
+					}
+				}
+				if (empty($_POST["email"])) {
+				$emailErr = "Adresa de email este obligatorie";
+				} else {
+				$email = test_input($_POST["email"]);
+				if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+					$emailErr = "Adresa de email este invalida";
+					}
+				}
+				if (empty($_POST["subiect"])) {
+					$comment = "";
+				} else {
+				$comment = test_input($_POST["subiect"]);
+				}
+				function test_input($data) {
+					$data = trim($data);
+					$data = stripslashes($data);
+					$data = htmlspecialchars($data);
+					return $data;
+				}
+			?>
+			
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+			
+			<label for="nume">Nume</label>
+			<input type="text" id="nume" name="nume" placeholder="Introduceti numele...">
+			
+			<label for="prenume">Prenume</label>
+			<input type="text" id="prenume" name="prenume" placeholder="Introduceti prenumele...">
+			
+			<label for="email">E-mail</label>
+			<input type="text" id="email" name="email" placeholder="Introduceti adresa de email...">
+			
+			<label for="tara">Tara</label> 
+			<select id="tara" name="tara">
+				<option value="romania">Romania</option>
+			</select>
+			
+			<label for="subiect">Comentariu...</label>
+			<textarea id="subiect" name="subiect" placeholder="Scrie-ne mesajul tau.." style="height:200px"></textarea>
+
+			<input type="submit" value="Trimite">
+
+			</form>
+		</div>
+			
+	</div>
+	
+	<div id="subsol">
+		<p>&copy;Toate drepturile rezervate către picky.ro</p>
+	
+	</div>	
+	
+	</div>
+
+</body>
+</html>
