@@ -16,10 +16,10 @@ body, html {
 	background-size: cover;
 }
 
-.img1{background-image: url("imagini/1.jpeg");}
-.img2{background-image: url("imagini/2.jpeg");}
-.img3{background-image: url("imagini/3.jpeg");}
-.img4{background-image: url("imagini/4.jpeg");}
+.img1{background-image: url("1.jpeg");}
+.img2{background-image: url("2.jpeg");}
+.img3{background-image: url("3.jpeg");}
+.img4{background-image: url("4.jpeg");}
 
 .bg-text{
 	overflow:hidden;
